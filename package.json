@@ -1,0 +1,62 @@
+{
+  "name": "building",
+  "version": "1.0.0",
+  "description": "building example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rich Boakes <rjb@boakes.org> (http://boakes.org/)",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "eslint-config-google": "^0.7.1",
+    "gulp": "^3.9.1",
+    "gulp-beautify": "^2.0.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-qunit": "^1.5.0",
+    "gulp-standard-format": "0.0.2",
+    "gulp-uglify": "^2.0.1",
+    "run-sequence": "^1.2.2"
+  },
+  "beautify": {
+    "indent_size": 2,
+    "end_with_newline": true
+  },
+  "eslintConfig": {
+    "_extends": "crockford",
+    "extends": "google",
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "rules": {
+      "no-var": [
+        "error"
+      ],
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "no-use-before-define": [
+        "error"
+      ],
+      "space-in-parens": [
+        2,
+        "never"
+      ]
+    }
+  }
+}
